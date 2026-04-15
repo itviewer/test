@@ -11,7 +11,6 @@ jobs:
           armbian_token: ${{ secrets.GITHUB_TOKEN }}
           armbian_board: "khadas-vim3" # orangepi5 bananapif3
           armbian_release: "noble" # trixie
-          armbian_target: "build"
-          armbian_ui: "xfce" # server xfce
+          armbian_target: "build myboard"
+          armbian_ui: "minimal" # server xfce
           armbian_runner_clean: "yes" # recommended for Github runners
-          armbian_extensions: "image-output-oowow,mesa-vpu"
